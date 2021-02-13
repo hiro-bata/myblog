@@ -1,18 +1,27 @@
 import Link from 'next/link';
+import Layout from '../component/layout'
+import Image from 'next/image'
 
 export default function Home({ blog }) {
   return (
-    <div>
+    <Layout>
+      <Image
+        src="/images/summer.jpg"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
       <ul>
         {blog.map(blog => (
           <li key={blog.id}>
+            タイトル：
             <Link href={`blog/${blog.id}`}>
               <a>{blog.title}</a>
             </Link>
           </li>
         ))}
       </ul>
-    </div>
+    </Layout>
   );
 }
 

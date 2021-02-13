@@ -1,14 +1,21 @@
+import Layout from '../../component/layout'
+import Link from 'next/link'
+import Date from '../../component/date'
+
 export default function BlogId({ blog }) {
     return (
-      <main>
+      <Layout>
         <h1>{blog.title}</h1>
-        <p>{blog.publishedAt}</p>
+        <Date dateString={blog.updatedAt} />
         <div
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
           }}
         />
-      </main>
+        <Link href="/">
+            <a>← Back to home</a>
+        </Link>
+      </Layout>
     );
   }
 
