@@ -1,16 +1,13 @@
 import Link from 'next/link';
 import Layout from '../component/layout'
-import Image from 'next/image'
+import Intro from '../component/intro'
+import HeroPost from '../component/hero-post'
 
 export default function Home({ blog }) {
   return (
     <Layout>
-      <Image
-        src="/images/summer.jpg"
-        alt="Picture of the author"
-        width={500}
-        height={500}
-      />
+      <Intro />
+      <HeroPost />
       <ul>
         {blog.map(blog => (
           <li key={blog.id}>
