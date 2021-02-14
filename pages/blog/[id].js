@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Date from '../../component/date'
 
-
 export default function BlogId({ blog }) {
     return (
       <div className="post-detail mt-32">
