@@ -1,4 +1,3 @@
-import Layout from '../../component/layout'
 import Link from 'next/link'
 import Date from '../../component/date'
 
@@ -14,9 +13,11 @@ export default function BlogId({ blog }) {
             __html: `${blog.body}`,
           }}
         />
-        <Link href="/">
-            <a>← Back to home</a>
-        </Link>
+        <div className="mt-10">
+            <Link href="/">
+                <a>← Back to home</a>
+            </Link>
+        </div>
       </div>
     );
   }
