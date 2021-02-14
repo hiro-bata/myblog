@@ -1,10 +1,9 @@
-import Head from 'next/head'
 import Layout from '../component/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function Home( {blog} ) {
+export default function Home() {
 
     return ( 
       <Layout>
@@ -14,7 +13,7 @@ export default function Home( {blog} ) {
             className={utilStyles.borderCircle}
             height={200}
             width={200}
-            alt={name}
+            alt=""
         />
         <section className={utilStyles.headingMd}>
           <h3 className="font-bold mb-5 mt-3">はじめまして、Hirokiです！</h3>
@@ -29,7 +28,7 @@ export default function Home( {blog} ) {
                 <li>高校：都立国立高校</li>
                 <li>大学：一橋大学</li>
                 <li>職業：広告代理店 営業</li>
-                <li>ハマっていること：React</li>
+                <li className="mb-3">ハマっていること：React</li>
                 <a className="font-bold text-indigo-500" href="https://chatbot-6eaf8.firebaseapp.com/" target="_blank">＊CHAT BOTでもっと詳しく</a>
             </ul>
             

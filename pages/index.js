@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from 'next/link'
 import Layout from '../component/layout'
 import Intro from '../component/intro'
 import HeroPost from '../component/hero-post'
@@ -35,7 +35,7 @@ export default function Home({ blog }) {
       <Footer />
     </>
   );
-}
+};
 
 // データ取得処理
 export const getStaticProps = async () => {

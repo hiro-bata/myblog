@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import Date from '../../component/date'
 
+
 export default function BlogId({ blog }) {
     return (
-      <div className="post-detail">
-        <h1>{blog.title}</h1>
+      <div className="post-detail mt-32">
+        <h1 className="font-bold text-xl sm:text-5xl mb-10">{blog.title}</h1>
         <Date dateString={blog.updatedAt} />
         <img src={blog.picture.url} />
         <div
@@ -20,7 +21,7 @@ export default function BlogId({ blog }) {
         </div>
       </div>
     );
-  }
+}
 
 // パスの指定処理
 export const getStaticPaths = async () => {
@@ -51,4 +52,4 @@ export const getStaticProps = async context => {
         blog: data,
       },
     };
-  };
+};
