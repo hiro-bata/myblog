@@ -4,6 +4,7 @@ import Intro from '../component/intro'
 import HeroPost from '../component/hero-post'
 import Date from '../component/date'
 import Footer from '../component/footer'
+import "tailwindcss/tailwind.css";
 
 export default function Home({ blog }) {
   return (
