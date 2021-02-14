@@ -31,11 +31,11 @@ li {
 }
 
 .intro-h1 {
-  font-size: 90px;
+  font-size: 80px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
 	.intro-h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }

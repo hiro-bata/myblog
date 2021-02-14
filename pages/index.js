@@ -7,6 +7,7 @@ export default function Home({ blog }) {
   return (
     <Layout>
       <Intro />
+      
       <HeroPost />
       <ul>
         {blog.map(blog => (
