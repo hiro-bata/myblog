@@ -4,10 +4,12 @@ import Date from '../../component/date'
 
 export default function BlogId({ blog }) {
     return (
-      <Layout>
+      <div className="post-detail">
         <h1>{blog.title}</h1>
         <Date dateString={blog.updatedAt} />
+        <img src={blog.picture.url} />
         <div
+          className="blog-text"
           dangerouslySetInnerHTML={{
             __html: `${blog.body}`,
           }}
@@ -15,7 +17,7 @@ export default function BlogId({ blog }) {
         <Link href="/">
             <a>← Back to home</a>
         </Link>
-      </Layout>
+      </div>
     );
   }
 
